@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "montilla";
+  src: url("/public/fonts/montilla/Montilla\ Extended\ ExtraBold\ DEMO.otf");
+}
+
