@@ -108,3 +108,15 @@ export const specialCoffee = [
     price: "250Rs",
   },
 ];
+
+export const breakfast = [
+  {
+    breakfastNav: [
+      "Wraps",
+      "Sandwiches",
+      "Smoothie & Frappes",
+      "Cookies",
+      "Coffee Tea & Chai",
+    ],
+  },
+];

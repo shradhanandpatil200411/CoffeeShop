@@ -13,7 +13,7 @@ function SpecialCoffee() {
         scrub: true,
       },
       x: -300,
-      duration: 0.5,
+      duration: 1,
       ease: "power1.inOut",
       rotate: 360,
       scale: 4,
@@ -26,7 +26,7 @@ function SpecialCoffee() {
         scrub: true,
       },
       x: 300,
-      duration: 0.5,
+      duration: 1,
       ease: "power1.inOut",
       rotate: 360,
       scale: 4,
@@ -69,7 +69,7 @@ function SpecialCoffee() {
         </div>
         <div className='coffee-beans-right absolute -bottom-30 right-0'>
           <img
-            className='w-40 z-40  rotate-12'
+            className='w-40 z-50  rotate-12'
             src='/img/coffee-beans.png'
             alt='img'
           />

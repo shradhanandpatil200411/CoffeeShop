@@ -4,6 +4,7 @@ import gsap from "gsap";
 import MainButton from "../Components/MainButton";
 import { SplitText } from "gsap/all";
 import SpecialCoffee from "./SpecialCoffee";
+import BreakfastContainer from "./BreakfastContainer";
 
 function AboutUs() {
   useGSAP(() => {
@@ -96,6 +97,9 @@ function AboutUs() {
         </div>
         <div>
           <SpecialCoffee />
+        </div>
+        <div>
+          <BreakfastContainer />
         </div>
       </div>
     </>
