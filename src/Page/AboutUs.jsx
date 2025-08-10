@@ -3,11 +3,12 @@ import { aboutUsData } from "../utils/data";
 import gsap from "gsap";
 import MainButton from "../Components/MainButton";
 import { SplitText } from "gsap/all";
+import SpecialCoffee from "./SpecialCoffee";
 
 function AboutUs() {
   useGSAP(() => {
     const tl = gsap.timeline();
-    const split = SplitText.create("#about-text", {
+    const split = SplitText.create(".about-text", {
       type: "chars,words,lines",
     });
     tl.from("#about-us", {
@@ -26,8 +27,7 @@ function AboutUs() {
 
     tl.from(split.words, {
       scrollTrigger: {
-        trigger: "#about-text",
-        markers: true,
+        trigger: ".about-text",
         start: "-200 center",
         end: "top center",
         scrub: true,
@@ -62,8 +62,8 @@ function AboutUs() {
             </div>
           ))}
         </div>
-        <div className='relative flex mt-10 w-full gap-5 z-20'>
-          <div className=' w-1/2'>
+        <div className='relative flex mt-10 w-full gap-10 z-20'>
+          <div className='w-1/2'>
             <img
               className='w-full rounded-2xl'
               src='/img/coffee-banner.png'
@@ -74,10 +74,12 @@ function AboutUs() {
             <h1 className='font-bold text-5xl'>
               Best Coffee House In Your Home Town
             </h1>
-            <p id='about-text' className='font-semibold text-lg'>
+            <p className='about-text font-medium text-lg leading-5 tracking-tight'>
               Our incredibly rate come from humble beginnings in yemen, where
               decades of political turmoil once forced local farmers to start
-              growing khat, a narcotic native to the Arabian Peninsula. <br />{" "}
+              growing khat, a narcotic native to the Arabian Peninsula.
+            </p>
+            <p className='about-text font-medium text-lg leading-5 tracking-tight'>
               The Dawoodi Bohara Community changed this, removing all the khat
               plants and replacing them with coffee, bringing this humble brew
               black to its roots.
@@ -91,6 +93,9 @@ function AboutUs() {
             src='/img/coffee-cup-bg.png'
             alt='bg-img'
           />
+        </div>
+        <div>
+          <SpecialCoffee />
         </div>
       </div>
     </>

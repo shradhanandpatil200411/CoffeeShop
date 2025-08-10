@@ -2,7 +2,6 @@
 @import "tailwindcss";
 
 
-
 @font-face {
   font-family: "montilla";
   src: url("/public/fonts/montilla/Montilla\ Extended\ ExtraBold\ DEMO.otf");
@@ -12,9 +11,6 @@
   --font-poppins: "Poppins", sans-serif;
   --font-roboto: "Roboto",
     sans-serif;
-  --color-Orange : "#ff5300";
-  --color-Black: "#1b1b1d";
-  --color-gray:"#4b4c56";
 
 }
 

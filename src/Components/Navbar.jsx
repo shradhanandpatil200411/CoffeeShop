@@ -14,7 +14,6 @@ function Navbar() {
         trigger: "#about-us",
         start: "-200 top",
         end: "bottom bottom",
-
         scrub: true,
       },
       color: "white",
