@@ -23,15 +23,18 @@ function Navbar() {
   }, []);
   return (
     <>
-      <div className='fixed flex z-50 w-full  justify-between items-center backdrop-blur-lg px-20 h-20 overflow-hidden'>
-        <div className='flex items-center'>
-          <img className='w-28 h-20' src='./img/logo-2.png' alt='logo' />
-          <div className='font-poppins-bold font-bold text-3xl'>
-            <span className='nav-text font-roboto'>Cof</span>
-            <span className='text-orange-500 font-roboto'>fee</span>
-          </div>
+      <div className='fixed flex z-50 w-full lg:justify-between md:justify-between items-center backdrop-blur-lg px-10 lg:px-20 md:px-20 h-20 overflow-hidden'>
+        <div className='lg:hidden'>
+          <img src='/img/icon/menu.svg' alt='icon' />
         </div>
-        <div className='bg-white px-10 py-4 rounded-full '>
+        <div>
+          <img
+            className='w-44 h-32'
+            src='/img/steamy_tales_logo.png'
+            alt='logo'
+          />
+        </div>
+        <div className='bg-white px-2 lg:px-10 md:px-10 py-4 rounded-full hidden lg:block'>
           <ul className='flex gap-10'>
             {navList.map((nav) => (
               <li

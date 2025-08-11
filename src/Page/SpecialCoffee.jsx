@@ -77,7 +77,7 @@ function SpecialCoffee() {
         <div className='coffee-leaves absolute z-0 top-20 left-80 '>
           <img
             className='w-96 -z-10'
-            src='/img/coffee-multi-Leaves.png'
+            src='https://ik.imagekit.io/shradhanandpatil/Coffee/img/coffee-multi-Leaves.png?updatedAt=1754923691518'
             alt='leaves-img'
           />
         </div>

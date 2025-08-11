@@ -45,34 +45,39 @@ function AboutUs() {
   }, []);
   return (
     <>
-      <div className='relative  bg-[#1b1b1d] text-white  w-full  px-20 py-20 overflow-hidden'>
-        <div className='flex gap-10'>
+      <div className='relative bg-[#1b1b1d] text-white  w-full  lg:px-20 md:px-20 px-5 py-20 overflow-hidden'>
+        <div className='lg:flex md:flex flex flex-wrap lg:flex-nowrap md:flex-nowrap lg:gap-10 md:gap-10 gap-10'>
           {aboutUsData.map((details) => (
-            <div id='about-us' key={details.id} className='leading-6 z-20'>
-              <div className='bg-[#262536] w-fit rounded-lg '>
+            <div
+              id='about-us'
+              key={details.id}
+              className='leading-6 z-20 lg:w-1/2 md:w-1/2 w-5/12 flex flex-col items-center lg:items-start'>
+              <div className='bg-[#262536] w-fit rounded-lg'>
                 <img
                   className='w-16 px-2 py-2'
                   src={details.icon}
                   alt={details.name}
                 />
               </div>
-              <div className='mt-2'>
-                <h1 className='font-bold text-lg uppercase'>{details.name}</h1>
-                <p>{details.description}</p>
+              <div className='mt-2 text-center lg:text-start w-fit'>
+                <h1 className='font-bold text-sm  uppercase lg:text-lg md:text-lg'>
+                  {details.name}
+                </h1>
+                <p className='hidden lg:block'>{details.description}</p>
               </div>
             </div>
           ))}
         </div>
-        <div className='relative flex mt-10 w-full gap-10 z-20'>
-          <div className='w-1/2'>
+        <div className='relative flex flex-col-reverse lg:flex-row md:flex-row mt-10 w-full gap-10 z-20'>
+          <div className=' lg:w-1/2 md:w-1/2 w-full '>
             <img
               className='w-full rounded-2xl'
-              src='/img/coffee-banner.png'
+              src='/img/about-us-img.png'
               alt='img'
             />
           </div>
-          <div className='w-1/2 flex flex-col gap-5'>
-            <h1 className='font-bold text-5xl'>
+          <div className='lg:w-1/2 md:w-1/2 w-full flex flex-col gap-5 text-center mt-5'>
+            <h1 className='font-bold md:font-bold lg:text-5xl md:text-5xl text-2xl '>
               Best Coffee House In Your Home Town
             </h1>
             <p className='about-text font-medium text-lg leading-5 tracking-tight'>
