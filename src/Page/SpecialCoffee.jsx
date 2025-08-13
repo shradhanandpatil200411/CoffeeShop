@@ -53,7 +53,7 @@ function SpecialCoffee() {
         <div className='absolute -left-40 top-50 -rotate-12'>
           <img
             className='w-96 opacity-60'
-            src='/img/coffee-cup-bg.png'
+            src='https://ik.imagekit.io/shradhanandpatil/Coffee/img/coffee-cup-bg.png?updatedAt=1754923689042'
             alt='bg-img'
           />
         </div>
@@ -63,20 +63,20 @@ function SpecialCoffee() {
         <div className='coffee-beans-left absolute top-0 -left-25'>
           <img
             className='w-60  rotate-45'
-            src='/img/coffee-beans.png'
+            src='https://ik.imagekit.io/shradhanandpatil/Coffee/img/coffee-beans.png?updatedAt=1754923688142'
             alt='img'
           />
         </div>
         <div className='coffee-beans-right absolute -bottom-30 right-0'>
           <img
             className='w-40 z-50  rotate-12'
-            src='/img/coffee-beans.png'
+            src='https://ik.imagekit.io/shradhanandpatil/Coffee/img/coffee-beans.png?updatedAt=1754923688142'
             alt='img'
           />
         </div>
-        <div className='coffee-leaves absolute z-0 top-20 left-80 '>
+        <div className='coffee-leaves absolute z-0 lg:top-60 lg:left-[50%]  top-96  w-full h-full '>
           <img
-            className='w-96 -z-10'
+            className=' w-96 lg:w-96 -z-10'
             src='https://ik.imagekit.io/shradhanandpatil/Coffee/img/coffee-multi-Leaves.png?updatedAt=1754923691518'
             alt='leaves-img'
           />

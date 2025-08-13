@@ -57,7 +57,7 @@ export const specialCoffee = [
     id: "p1",
     name: "Hot Coffee",
     description: "Classic hot coffee in a takeaway cup simple and energizing.",
-    img: "/img/Products/Hot-Coffee.png",
+    img: "https://ik.imagekit.io/shradhanandpatil/Coffee/img/Products/Products/product4.png?updatedAt=1755067386166",
     price: "150Rs",
   },
 
@@ -65,14 +65,14 @@ export const specialCoffee = [
     id: "p3",
     name: "Iced Coffee with Cream & Spices",
     description: "Chilled coffee with cream and spices rich and aromatic.",
-    img: "/img/Products/Iced-Coffee.png",
+    img: "https://ik.imagekit.io/shradhanandpatil/Coffee/img/Products/Products/product3.png?updatedAt=1755067384445",
     price: "200Rs",
   },
   {
     id: "p4",
     name: "Iced Mocha",
     description: "Cold coffee with chocolate and milk cool and chocolaty.",
-    img: "/img/Products/Iced-Mocha.png",
+    img: "https://ik.imagekit.io/shradhanandpatil/Coffee/img/Products/Products/product2.png?updatedAt=1755067382076",
     price: "180Rs",
   },
   {
@@ -80,7 +80,7 @@ export const specialCoffee = [
     name: "Chocolate Milkshake",
     description:
       "Creamy chocolate shake topped with whipped cream sweet and indulgent.",
-    img: "/img/Products/Chocolate Milkshake.png",
+    img: "https://ik.imagekit.io/shradhanandpatil/Coffee/img/Products/Products/product5.png?updatedAt=1755067386455",
     price: "140Rs",
   },
   {

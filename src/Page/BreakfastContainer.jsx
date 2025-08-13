@@ -17,7 +17,7 @@ function BreakfastContainer() {
               {breakfast[0].breakfastNav.map((nav, i) => (
                 <li
                   key={i}
-                  className='cursor-pointer hover:bg-[#ff5300] px-2 rounded-t-lg '
+                  className='cursor-pointer hover:bg-[#ff5300] px-2 rounded-t-lg z-40'
                   onClick={() => setBreakfastCategory(i)}
                   style={{
                     backgroundColor: breakfastCategory == i ? "#ff5300" : "",

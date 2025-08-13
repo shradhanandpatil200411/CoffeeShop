@@ -30,7 +30,7 @@ function Navbar() {
         <div>
           <img
             className='w-44 h-32'
-            src='/img/steamy_tales_logo.png'
+            src='https://ik.imagekit.io/shradhanandpatil/Coffee/img/logo-2.png?updatedAt=1755067765439'
             alt='logo'
           />
         </div>

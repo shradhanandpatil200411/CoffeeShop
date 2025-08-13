@@ -6,34 +6,19 @@ import { SplitText } from "gsap/all";
 function Hero() {
   useGSAP(() => {
     const tl = gsap.timeline();
-    // const split = SplitText.create("#tag-line", {
-    //   type: "chars,words,line",
-    // });
 
-    // tl.to("#hero-img-1", {
-    //   y: 1000,
-    //   duration: 1.2,
-    //   ease: "bounce.out",
-    // });
-
-    tl.to("#hero-img-2", {
-      x: -450,
+    tl.from("#hero-img-2", {
+      y: -200,
       duration: 2,
       delay: 0.5,
       ease: "elastic.out",
     });
 
-    tl.from("#splash-img-1", {
-      opacity: 1,
-      ease: "power1",
+    tl.from("#splash-img-2 , #splash-img-1", {
+      opacity: 0,
+      ease: "sine.out",
       duration: 1,
     });
-
-    // tl.from(split.chars, {
-    //   x: 2,
-    //   autoAlpha: 0,
-    //   stagger: 0.05,
-    // });
   }, []);
   return (
     <>
@@ -44,7 +29,7 @@ function Hero() {
           </h1>
           <p
             id='tag-line'
-            className='font-[montilla] lg:my-10 md:my-10 my-5 w-8/12 '>
+            className='font-[montilla] lg:my-10 md:my-10 my-5 w-8/12 text-sm lg:text-lg md:text-lg'>
             We provide a variety of unique and Best Coffee
           </p>
           <MainButton name='Order Now' />
@@ -54,34 +39,28 @@ function Hero() {
           className='absolute z-10 -left-[22%] rotate-12 top-25'>
           <img
             className='h-[550px] opacity-15 '
-            src='/img/coffee-cup-bg.png'
+            src='https://ik.imagekit.io/shradhanandpatil/Coffee/img/coffee-cup-bg.png?updatedAt=1754923689042'
             alt='img'
           />
         </div>
         <div className='absolute lg:5/12 md:5/12 right-0 h-full top-20 flex w-5/12'>
-          {/* <img
-            id='hero-img-1'
-            className='w-8/12 absolute -top-[170%] z-10'
-            src='/img/hero-cup-img-1.png'
-            alt='coffee-cup'
-          /> */}
           <img
-            id='#splash-img-1'
-            src='/img/image (2).png'
+            id='splash-img-1'
+            src='https://ik.imagekit.io/shradhanandpatil/Coffee/img/image%20(2).png?updatedAt=1755065609119'
             alt='img'
-            className='absolute '
+            className='absolute w-full top-20 lg:top-0 lg:right-0 lg:rotate-0 right-2 -rotate-12'
           />
           <img
             id='hero-img-2'
-            className='absolute -right-96 w-9/12 pt-28 -rotate-12 '
-            src='/img/hero-cup-img-2.png'
+            className='absolute lg:right-13 md:right-13 right-0 z-20 lg:w-9/12 md:w-9/12 w-full  pt-28 '
+            src='https://ik.imagekit.io/shradhanandpatil/Coffee/img/hero-cup-img-2.png?updatedAt=1754923689854'
             alt='coffee-cup'
           />
           <img
-            id='#splash-img-2'
-            src='/img/image (3).png'
+            id='splash-img-2'
+            src='https://ik.imagekit.io/shradhanandpatil/Coffee/img/image%20(3).png?updatedAt=1755065608969'
             alt='img'
-            className='absolute top-44'
+            className='absolute top-44 z-20'
           />
         </div>
       </div>
